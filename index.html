@@ -15,7 +15,7 @@
     <nav class="navbar">
         <div class="logo">CyberSmart</div>
 
-        
+
 <div class="nav-links">
     <a href="#home">Home</a>
     <a href="#learn">Learn</a>
@@ -77,201 +77,154 @@
         </div>
     </section>
 
-    <!-- Phishing Quiz -->
+        <!-- Phishing Quiz -->
     <section id="quiz" class="quiz-section">
         <h2>Test Your Cybersecurity Knowledge</h2>
 
-        <p>
-            You receive an email asking you to verify your bank account
-            through an unfamiliar link. What should you do?
-        </p>
-
         <form id="quiz-form">
+            <div class="quiz-question">
+                <h3>Question 1: Suspicious Bank Email</h3>
+                <p>
+                    You receive an email asking you to verify your bank account
+                    through an unfamiliar link. What should you do?
+                </p>
 
-            <label class="answer">
-                <input type="radio" name="answer" value="a">
-                Click the link immediately.
-            </label>
+                <label class="answer">
+                    <input type="radio" name="answer" value="a">
+                    Click the link immediately.
+                </label>
 
-            <label class="answer">
-                <input type="radio" name="answer" value="b">
-                Verify the message through the bank's official website
-                or contact channel.
-            </label>
+                <label class="answer">
+                    <input type="radio" name="answer" value="b">
+                    Verify the message through the bank's official website
+                    or contact channel.
+                </label>
 
-            <label class="answer">
-                <input type="radio" name="answer" value="c">
-                Reply with my account details.
-            </label>
+                <label class="answer">
+                    <input type="radio" name="answer" value="c">
+                    Reply with my account details.
+                </label>
+            </div>
+
+            <div class="quiz-question">
+                <h3>Question 2: Suspicious Prize Message</h3>
+                <p>
+                    You receive a message saying you have won a prize,
+                    but you must pay a fee to claim it. What should you do?
+                </p>
+
+                <label class="answer">
+                    <input type="radio" name="answer2" value="a">
+                    Pay the fee immediately.
+                </label>
+
+                <label class="answer">
+                    <input type="radio" name="answer2" value="b">
+                    Share the message with all your contacts.
+                </label>
+
+                <label class="answer">
+                    <input type="radio" name="answer2" value="c">
+                    Treat it as suspicious and verify it independently.
+                </label>
+            </div>
 
             <button type="submit" class="start-button">
-                Submit Answer
+                Submit Answers
             </button>
-<div class="quiz-question">
-    <h3>Question 2: Suspicious Prize Message</h3>
-
-    <p>
-        You receive a message saying you have won a prize,
-        but you must pay a fee to claim it. What should you do?
-    </p>
-
-    <label class="answer">
-        <input type="radio" name="answer2" value="a">
-        Pay the fee immediately.
-    </label>
-
-    <label class="answer">
-        <input type="radio" name="answer2" value="b">
-        Share the message with all your contacts.
-    </label>
-
-    <label class="answer">
-        <input type="radio" name="answer2" value="c">
-        Treat it as suspicious and verify it independently.
-    </label>
-</div>
-
-
-    <button type="submit" class="start-button">
-        Submit Answer
         </form>
 
         <p id="quiz-result" aria-live="polite"></p>
     </section>
 
-    <!-- Password Safety -->
+
+
+    <!-- Password Safety Tips -->
     <section id="password-tips" class="intro">
-<section id="password-checker" class="intro">
-    <h2>Password Strength Checker</h2>
-<section id="password-checklist" class="intro">
-    <h2>Password Safety Checklist</h2>
-
-    <p>Tick each habit you already follow.</p>
-
-    <label class="answer">
-        <input type="checkbox" class="security-check">
-        I use unique passwords for different accounts.
-    </label>
-
-    <label class="answer">
-        <input type="checkbox" class="security-check">
-        I use long passwords or passphrases.
-    </label>
-
-    <label class="answer">
-        <input type="checkbox" class="security-check">
-        I enable multi-factor authentication.
-    </label>
-
-    <label class="answer">
-        <input type="checkbox" class="security-check">
-        I never share my passwords or OTPs.
-    </label>
-
-    <label class="answer">
-        <input type="checkbox" class="security-check">
-        I use a reputable password manager when appropriate.
-    </label>
-
-    <p id="checklist-result" aria-live="polite">
-        Completed: 0 out of 5 habits.
-    </p>
-</section>
-
-
-    <p>
-        Enter a sample password to check its strength.
-        Do not enter a password you actually use.
-    </p>
-
-    <label for="password-input">Sample password:</label>
-
-
-
-<input
-    type="password"
-    id="password-input"
-    placeholder="Enter a sample password"
-    autocomplete="off"
->
-<button
-    type="button"
-    class="start-button"
-    id="toggle-password-button"
->
-    Show Password
-</button>
-
-
-    <button
-        type="button"
-        class="start-button"
-        id="check-password-button"
-    >
-        Check Strength
-    </button>
-
-    <p id="password-result" aria-live="polite"></p>
-</section>
-
         <h2>Password Safety Tips</h2>
 
-        <p>
-            Use long, unique passwords for your important accounts.
-        </p>
+        <p>Use long, unique passwords for your important accounts.</p>
+        <p>Consider using a reputable password manager.</p>
+        <p>Enable multi-factor authentication wherever possible.</p>
+    </section>
+
+    <!-- Password Strength Checker -->
+    <section id="password-checker" class="intro">
+        <h2>Password Strength Checker</h2>
 
         <p>
-            Consider using a reputable password manager.
+            Enter a sample password to check its strength.
+            Do not enter a password you actually use.
         </p>
 
-        <p>
-            Enable multi-factor authentication wherever possible.
+        <label for="password-input">Sample password:</label>
+
+        <input
+            type="password"
+            id="password-input"
+            placeholder="Enter a sample password"
+            autocomplete="off"
+        >
+
+        <button
+            type="button"
+            class="start-button"
+            id="toggle-password-button"
+        >
+            Show Password
+        </button>
+
+        <button
+            type="button"
+            class="start-button"
+            id="check-password-button"
+        >
+            Check Strength
+        </button>
+
+        <p id="password-result" aria-live="polite"></p>
+    </section>
+
+    <!-- Password Safety Checklist -->
+    <section id="password-checklist" class="intro">
+        <h2>Password Safety Checklist</h2>
+
+        <p>Tick each habit you already follow.</p>
+
+        <label class="answer">
+            <input type="checkbox" class="security-check">
+            I use unique passwords for different accounts.
+        </label>
+
+        <label class="answer">
+            <input type="checkbox" class="security-check">
+            I use long passwords or passphrases.
+        </label>
+
+        <label class="answer">
+            <input type="checkbox" class="security-check">
+            I enable multi-factor authentication.
+        </label>
+
+        <label class="answer">
+            <input type="checkbox" class="security-check">
+            I never share my passwords or OTPs.
+        </label>
+
+        <label class="answer">
+            <input type="checkbox" class="security-check">
+            I use a reputable password manager when appropriate.
+        </label>
+
+        <p id="checklist-result" aria-live="polite">
+            Completed: 0 out of 5 habits.
         </p>
     </section>
 
-    <!-- Online Scam Awareness -->
+
+        <!-- Online Scam Awareness -->
     <section id="scam-tips" class="intro">
         <h2>Spot Online Scams</h2>
-<section id="phishing-tips" class="intro">
-    <h2>How to Recognize Phishing</h2>
-
-    <p>Phishing messages often try to trick you into revealing
-       passwords, financial details, or other personal information.</p>
-
-    <ul>
-        <li>Check the sender's email address carefully.</li>
-        <li>Be cautious of urgent threats or unexpected prizes.</li>
-        <li>Inspect links before opening them.</li>
-        <li>Never share passwords or one-time passwords through email.</li>
-        <li>Verify unusual requests using an official contact channel.</li>
-    </ul>
-
-    <p>
-        <strong>Remember:</strong> If a message feels suspicious,
-        pause and verify it before taking action.
-    </p>
-</section>
-
-<section id="phishing-tips" class="intro">
-    <h2>How to Recognize Phishing</h2>
-
-    <p>Phishing messages often try to trick you into revealing
-       passwords, financial details, or other personal information.</p>
-
-    <ul>
-        <li>Check the sender's email address carefully.</li>
-        <li>Be cautious of urgent threats or unexpected prizes.</li>
-        <li>Inspect links before opening them.</li>
-        <li>Never share passwords or one-time passwords through email.</li>
-        <li>Verify unusual requests using an official contact channel.</li>
-    </ul>
-
-    <p>
-        <strong>Remember:</strong> If a message feels suspicious,
-        pause and verify it before taking action.
-    </p>
-</section>
-
 
         <p>
             Pause before sending money or sharing personal information.
@@ -282,6 +235,30 @@
             trusted channel.
         </p>
     </section>
+
+    <!-- Phishing Awareness -->
+    <section id="phishing-tips" class="intro">
+        <h2>How to Recognize Phishing</h2>
+
+        <p>
+            Phishing messages try to trick you into revealing
+            passwords, financial details, or other personal information.
+        </p>
+
+        <ul>
+            <li>Check the sender's email address carefully.</li>
+            <li>Be cautious of urgent threats or unexpected prizes.</li>
+            <li>Inspect links before opening them.</li>
+            <li>Never share passwords or one-time passwords through email.</li>
+            <li>Verify unusual requests using an official contact channel.</li>
+        </ul>
+
+        <p>
+            <strong>Remember:</strong> If a message feels suspicious,
+            pause and verify it before taking action.
+        </p>
+    </section>
+
 
     <!-- Daily Cybersecurity Tips -->
     <section id="daily-tips" class="intro">
@@ -296,7 +273,7 @@
         </button>
     </section>
 
-    
+
 <!-- About CyberSmart -->
 <section id="about" class="intro">
     <h2>About CyberSmart</h2>
@@ -343,21 +320,11 @@
         <a href="mailto:jexpixel@gmail.com">jexpixel@gmail.com</a>
     </p>
 
-    
+
 </section>
 
 
-        <p>
-            CyberSmart is a cybersecurity awareness project designed
-            to help people understand common online threats and make
-            safer decisions when using the internet.
-        </p>
 
-        <p>
-            Our goal is to make cybersecurity knowledge simple,
-            practical, and accessible to beginners.
-        </p>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
