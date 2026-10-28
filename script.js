@@ -43,19 +43,20 @@ quizForm.addEventListener("submit", function (event) {
 
     quizCompleted = true;
 
-    
-const percentage = Math.round((score / 2) * 100);
+    const percentage = Math.round((score / 2) * 100);
 
-quizResult.textContent =
-    "Your CyberSmart Result: " + score + "/2 (" +
-    percentage + "%). " +
-    (score === 2
-        ? "Excellent! You recognized both online threats."
-        : score === 1
-            ? "Good effort! Review the phishing tips and keep learning."
-            : "Review the phishing tips and try again after refreshing.");
+    let message = "Review the phishing tips and try again after refreshing.";
 
+    if (score === 2) {
+        message = "Excellent! You recognized both online threats.";
+    } else if (score === 1) {
+        message = "Good effort! Review the phishing tips and keep learning.";
+    }
 
+     quizResult.textContent =
+        "Your CyberSmart Result: " + score + "/2 (" +
+
+        percentage + "%). " + message;
     document.querySelectorAll(
         'input[name="answer"], input[name="answer2"]'
     ).forEach(function (option) {
